@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -20,28 +20,28 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 480px;
+  max-width: 450px;
   height: 100vh;
   background-color: #000000;
-  padding: 20px;
+  padding: 20px 20px 30px 20px;
   justify-content: space-between;
 }
 
 .calculator {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  height: 75vh;
   justify-content: flex-end;
 }
 
 #display {
   width: 100%;
-  height: 120px;
+  height: 140px;
   background: transparent;
   border: none;
   outline: none;
   color: #ffffff;
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: right;
   padding: 10px;
   margin-bottom: 20px;
@@ -50,12 +50,11 @@ body {
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 14px;
 }
 
 button {
-  height: 75px;
+  height: 72px;
   border-radius: 50%;
   border: none;
   background-color: #333333;
@@ -66,11 +65,10 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.2s;
 }
 
 button:active {
-  opacity: 0.7;
+  background-color: #737373;
 }
 
 .op-btn {
@@ -91,29 +89,31 @@ button:active {
   grid-column: span 2;
   border-radius: 40px;
   justify-content: flex-start;
-  padding-left: 30px;
+  padding-left: 28px;
 }
 
 .history-panel {
-  max-height: 120px;
+  height: 20vh;
   overflow-y: auto;
-  border-top: 1px solid #333;
+  border-top: 1px solid #222222;
   padding-top: 10px;
 }
 
 .history-panel h3 {
-  font-size: 0.9rem;
-  color: #888888;
-  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #666666;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #history-list {
   list-style: none;
-  font-size: 0.9rem;
-  color: #aaaaaa;
+  font-size: 0.95rem;
+  color: #bbbbbb;
 }
 
 #history-list li {
-  padding: 4px 0;
-  border-bottom: 1px solid #222;
+  padding: 6px 0;
+  border-bottom: 1px solid #111111;
 }
